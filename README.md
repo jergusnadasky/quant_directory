@@ -3,7 +3,7 @@
 A centralized repository designed to aggregate and serve as the single entry point for all quantitative finance and machine learning projects. This project acts as a high-signal landing page to streamline portfolio representation for professional networks and resumes.
 
 ## Live Production Link
-🔗 The directory is deployed via GitHub Pages at: [(https://jergusnadasky.github.io/quant_directory/)]
+🔗 The directory is deployed via GitHub Pages at: (https://jergusnadasky.github.io/quant_directory/)
 
 ---
 

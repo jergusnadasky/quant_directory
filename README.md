@@ -44,7 +44,7 @@ An end-to-end quantitative research and backtesting platform designed to identif
     * Win Rate
 * Features interactive Plotly visualizations for:
     * Equity curves
-    *     * Z-score signal monitoring
+    * Z-score signal monitoring
     * Correlation heatmaps
     * Spread analysis
     * Trade execution logs

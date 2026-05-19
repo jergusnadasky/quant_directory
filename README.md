@@ -20,19 +20,42 @@ The hub uses a minimalist, 3-column symmetrical grid layout built with semantic 
 
 This section catalogs the active, in-development, and planned strategies hosted within the directory infrastructure.
 
-### Project 1: Volatility Surface Arbitrage Pipeline
+### Project 1: Pairs Trading Statistical Arbitrage Platform
 * **Status:** Operational / Production 🟢
 * **Deployment Link:** [Insert Live Dashboard or Application URL]
 * **Source Code:** [Insert Specific Repository URL]
 
 #### Description
-An end-to-end quantitative execution pipeline designed to fetch real-time multi-strike options data, fit implied volatility surfaces using custom Deep Neural Networks (DNNs), and isolate structural mispricings across the term structure. 
+An end-to-end quantitative research and backtesting platform designed to identify statistically cointegrated equity pairs and evaluate mean-reversion trading opportunities through interactive out-of-sample simulation. The system performs automated market data ingestion, Engle-Granger cointegration testing, rolling z-score signal generation, and portfolio performance analytics within a live interactive dashboard. 
 
 #### Key Metrics & Implementation
-* Employs automated data ingestion pipelines.
-* Evaluates alpha generation via empirical backtesting.
-* Implements protective risk thresholds to mitigate tail-risk exposure during sharp regime shifts.
-
+* Employs automated market data ingestion pipelines using Yahoo Finance APIs and synchronized historical price normalization.
+* Detects statistically significant trading pairs through Engle-Granger cointegration testing and hedge ratio estimation.
+* Generates long/short trading signals using rolling spread z-score deviations and configurable mean-reversion thresholds.
+* Evaluates alpha generation through out-of-sample backtesting against benchmark buy-and-hold performance.
+* Implements configurable transaction cost modeling and stop-loss thresholds to reduce adverse exposure during volatile market regimes.
+* Computes institutional-style performance analytics including:
+    * CAGR
+    * Sharpe Ratio
+    * Sortino Ratio
+    * Calmar Ratio
+    * Annualized Volatility
+    * Maximum Drawdown
+    * Win Rate
+* Features interactive Plotly visualizations for:
+    * Equity curves
+    *     * Z-score signal monitoring
+    * Correlation heatmaps
+    * Spread analysis
+    * Trade execution logs
+* Built with:
+    * Python
+    * Streamlit
+    * pandas
+    * statsmodels
+    * Plotly
+    * NumPy
+    * SciPy
 ---
 
 ### Project 2: Order Book Imbalance LSTM

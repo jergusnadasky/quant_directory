@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,142 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #0c0c0e; /* Deep minimal charcoal black */
+            background-color: #0c0c0e;
+            /* Deep minimal charcoal black */
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         }
     </style>
 </head>
-<body class="text-zinc-400 min-h-screen flex flex-col justify-between p-6 md:p-12 selection:bg-zinc-800 selection:text-white">
+
+<body
+    class="text-zinc-400 min-h-screen flex flex-col justify-between p-6 md:p-12 selection:bg-zinc-800 selection:text-white">
 
     <header class="max-w-6xl w-full mx-auto flex justify-between items-center border-b border-zinc-800/60 pb-6 mb-12">
         <div>
             <h1 class="text-white text-md font-bold tracking-wider">QUANT_LAB //</h1>
-            <p class="text-[11px] text-zinc-500 mt-0.5 uppercase tracking-widest">Machine Learning & Quantitative Strategies</p>
+            <p class="text-[11px] text-zinc-500 mt-0.5 uppercase tracking-widest">Machine Learning & Quantitative
+                Strategies</p>
         </div>
         <nav class="flex gap-6 text-xs uppercase tracking-wider">
-            <a href="https://www.linkedin.com/in/jergusnadasky/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
-            <a href="https://github.com/jergusnadasky" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/jergusnadasky/" target="_blank"
+                class="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com/jergusnadasky" target="_blank"
+                class="hover:text-white transition-colors">GitHub</a>
             <a href="#" class="hover:text-white transition-colors">Resume</a>
         </nav>
     </header>
 
     <main class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <a href="https://cointegration-lab.streamlit.app/" class="relative group block aspect-[4/3] rounded-lg overflow-hidden border border-zinc-800/80 bg-zinc-900 transition-all duration-300 hover:border-zinc-700 bg-cover bg-center" 
-            style="background-image: url('assets/statarb_banner.png');"> <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-            
-            <div class="absolute inset-0 p-6 flex flex-col justify-between z-10">
-                <div class="flex justify-between items-center">
-                    <span class="text-[10px] uppercase font-bold tracking-widest bg-emerald-950/80 text-emerald-400 px-2 py-0.5 rounded border border-emerald-800/40">LIVE</span>
-                    <span class="text-xs font-mono text-zinc-500">01 //</span>
-                </div>
-                <div>
-                    <h2 class="text-white font-medium text-base mb-1 group-hover:text-emerald-400 transition-colors">Pairs Trading Dashboard</h2>
-                    <p class="text-xs text-zinc-400 line-clamp-2 font-sans tracking-wide">Statistical arbitrage research platform built in Python that identifies cointegrated equity pairs using Engle-Granger testing, models mean-reversion opportunities with z-scores, backtests long/short trading strategies with transaction costs, and visualizes portfolio analytics through an interactive Streamlit dashboard.</p>
-                </div>
-            </div>
-        </a>
 
-        <a href="#" class="relative group block aspect-[4/3] rounded-lg overflow-hidden border border-zinc-800/80 bg-zinc-900 transition-all duration-300 hover:border-zinc-700 bg-cover bg-center"
-           style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80');">
-            
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-            
+        <div class="relative group aspect-[4/3] rounded-lg overflow-hidden border border-zinc-800/80 bg-zinc-900 transition-all duration-300 hover:border-zinc-700 bg-cover bg-center"
+            style="background-image: url('assets/statarb_banner.png');">
+
+            <!-- Clickable Background -->
+            <a href="https://cointegration-lab.streamlit.app/" target="_blank" class="absolute inset-0 z-0"></a>
+
+            <!-- Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/10 opacity-85 group-hover:opacity-95 transition-opacity duration-500">
+            </div>
+
+            <!-- Content -->
+            <div class="absolute inset-0 p-6 z-10 flex flex-col justify-between">
+
+                <!-- Top -->
+                <div class="flex justify-between items-center">
+                    <span
+                        class="text-[10px] uppercase font-bold tracking-widest bg-emerald-950/80 text-emerald-400 px-2 py-0.5 rounded border border-emerald-800/40">
+                        LIVE
+                    </span>
+
+                    <span class="text-xs font-mono text-zinc-500">
+                        01 //
+                    </span>
+                </div>
+
+                <!-- Bottom Content -->
+                <div class="pt-2">
+
+                    <!-- Text Content -->
+                    <div class="transition-all duration-500">
+
+                        <h2
+                            class="text-white font-medium text-base mb-2 group-hover:text-emerald-400 transition-colors duration-300">
+                            Pairs Trading Dashboard
+                        </h2>
+
+                        <!-- Description -->
+                        <div
+                            class="overflow-hidden max-h-[2.7rem] group-hover:max-h-[8rem] transition-all duration-500">
+                            <p class="text-xs text-zinc-400 font-sans tracking-wide leading-relaxed">
+                                Statistical arbitrage research platform built in Python that identifies cointegrated
+                                equity
+                                pairs using Engle-Granger testing, models mean-reversion opportunities with z-scores,
+                                backtests
+                                long/short trading strategies with transaction costs, and visualizes portfolio analytics
+                                through
+                                an interactive Streamlit dashboard.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex gap-3 mt-4 z-20 relative">
+
+                        <a href="https://cointegration-lab.streamlit.app/" target="_blank"
+                            class="text-[11px] uppercase tracking-widest px-3 py-1 rounded border border-emerald-700/50 text-emerald-400 bg-black/40 hover:bg-emerald-950/50 transition">
+                            Live Demo
+                        </a>
+
+                        <a href="https://github.com/jergusnadasky/pairs-trading-statarb" target="_blank"
+                            class="text-[11px] uppercase tracking-widest px-3 py-1 rounded border border-zinc-700 text-zinc-300 bg-black/40 hover:bg-zinc-800/60 transition">
+                            Source Code
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <a href="#"
+            class="relative group block aspect-[4/3] rounded-lg overflow-hidden border border-zinc-800/80 bg-zinc-900 transition-all duration-300 hover:border-zinc-700 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80');">
+
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity">
+            </div>
+
             <div class="absolute inset-0 p-6 flex flex-col justify-between z-10">
                 <div class="flex justify-between items-center">
-                    <span class="text-[10px] uppercase font-bold tracking-widest bg-amber-950/80 text-amber-400 px-2 py-0.5 rounded border border-amber-800/40">BUILDING</span>
+                    <span
+                        class="text-[10px] uppercase font-bold tracking-widest bg-amber-950/80 text-amber-400 px-2 py-0.5 rounded border border-amber-800/40">BUILDING</span>
                     <span class="text-xs font-mono text-zinc-500">02 //</span>
                 </div>
                 <div>
-                    <h2 class="text-white font-medium text-base mb-1 group-hover:text-amber-400 transition-colors">Order Book LSTM</h2>
-                    <p class="text-xs text-zinc-400 line-clamp-2 font-sans tracking-wide">High-frequency mid-price direction forecasting using L3 order book imbalance architectures.</p>
+                    <h2 class="text-white font-medium text-base mb-1 group-hover:text-amber-400 transition-colors">Order
+                        Book LSTM</h2>
+                    <p class="text-xs text-zinc-400 line-clamp-2 font-sans tracking-wide">High-frequency mid-price
+                        direction forecasting using L3 order book imbalance architectures.</p>
                 </div>
             </div>
         </a>
 
-        <div class="relative aspect-[4/3] rounded-lg overflow-hidden border border-dashed border-zinc-800 bg-zinc-950/20 flex flex-col justify-center items-center text-center p-6">
+        <div
+            class="relative aspect-[4/3] rounded-lg overflow-hidden border border-dashed border-zinc-800 bg-zinc-950/20 flex flex-col justify-center items-center text-center p-6">
             <span class="text-zinc-600 text-xs font-mono tracking-widest">[ SYSTEM_IDLE ]</span>
             <p class="text-[11px] text-zinc-700 mt-2 font-sans">Next mathematical framework initializing....</p>
         </div>
 
     </main>
 
-    <footer class="max-w-6xl w-full mx-auto text-center text-[10px] text-zinc-600 font-mono mt-16 pt-6 border-t border-zinc-900">
+    <footer
+        class="max-w-6xl w-full mx-auto text-center text-[10px] text-zinc-600 font-mono mt-16 pt-6 border-t border-zinc-900">
         &copy; 2026 / SECURE_CONNECTION // ALL PRODUCTION MODELS ARE BACKTESTED EMPIRICALLY.
     </footer>
 
 </body>
+
 </html>

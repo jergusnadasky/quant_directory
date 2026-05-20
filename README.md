@@ -22,8 +22,8 @@ This section catalogs the active, in-development, and planned strategies hosted 
 
 ### Project 1: Pairs Trading Statistical Arbitrage Platform
 * **Status:** Operational / Production 🟢
-* **Deployment Link:** [Insert Live Dashboard or Application URL]
-* **Source Code:** [Insert Specific Repository URL]
+* **Deployment Link:** https://cointegration-lab.streamlit.app/
+* **Source Code:** https://github.com/jergusnadasky/pairs-trading-statarb
 
 #### Description
 An end-to-end quantitative research and backtesting platform designed to identify statistically cointegrated equity pairs and evaluate mean-reversion trading opportunities through interactive out-of-sample simulation. The system performs automated market data ingestion, Engle-Granger cointegration testing, rolling z-score signal generation, and portfolio performance analytics within a live interactive dashboard. 
